@@ -1,0 +1,156 @@
+.ai_header {
+  display: flex;
+}
+
+.ai_header-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.people {
+  width: 181.79;
+  height: 38px;
+}
+
+.ai_header-content h1 {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  font-family: var(--font-family);
+}
+
+.ai_header-content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.ai_header-content-input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+}
+
+.ai_header-content-input input {
+  flex: 2;
+  background: var(--color-footer);
+  width: 100%;
+  min-height: 50px;
+  background: #052d56;
+  border-radius: 5px 0px 0px 5px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.ai_header-content-input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  color: white;
+  background: #ff4820;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.ai_header-content-people {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.ai_header-content-people p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 0 0 1rem;
+}
+
+.ai_header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai_header-image img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .ai_header {
+    flex-direction: column;
+  }
+
+  .ai_header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ai_header h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .ai_header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ai_header-content-people {
+    flex-direction: column;
+  }
+
+  .ai_header-content-people p {
+    margin: 0;
+  }
+
+  .ai_header-content-input input,
+  .ai_header-content-input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ai_header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .ai_header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .ai_header-content-input input,
+  .ai_header-content-input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

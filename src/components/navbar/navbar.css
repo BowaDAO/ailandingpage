@@ -1,0 +1,148 @@
+.ai_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.fixed_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-footer);
+}
+
+.ai_navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ai_navbar-links-logo {
+  margin-right: 2rem;
+}
+
+.ai_navbar-links-logo img {
+  width: 62.56px;
+  height: 16.02px;
+}
+
+.ai_navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ai_navbar-links-container a,
+.ai_navbar-sign p,
+.ai_navbar-menu-container a,
+.ai_navbar-menu-container p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.ai_navbar-sign button,
+.ai_navbar-menu-container button {
+  height: 58px;
+  width: 152px;
+  border-radius: 5px;
+  top: 55px;
+  left: 1153px;
+  border: none;
+  color: #fff;
+  background-color: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.ai_navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.ai_navbar-menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  top: 40px;
+  right: 0;
+  position: absolute;
+  min-width: 210px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0.5 rgba(0, 0, 0, 0.2);
+}
+
+.ai_navbar-menu-container a {
+  margin: 1rem 0;
+}
+
+.ai_navbar-menu-container-links-sign {
+  display: none;
+}
+
+.ai_navbar-menu-container-links {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1050px) {
+  .ai_navbar-links-container {
+    display: none;
+  }
+
+  .ai_navbar-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ai_navbar,
+  .fixed_navbar {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ai_navbar,
+  .fixed_navbar {
+    padding: 2rem;
+  }
+
+  .ai_navbar-sign {
+    display: none;
+  }
+
+  .ai_navbar-menu-container {
+    top: 20px;
+  }
+  .ai_navbar-menu-container-links {
+    padding-bottom: 20px;
+  }
+
+  .ai_navbar-menu-container-links-sign {
+    display: block;
+  }
+}
